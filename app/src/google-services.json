@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "240518422004",
+    "firebase_url": "https://listamercado-d9023.firebaseio.com",
+    "project_id": "listamercado-d9023",
+    "storage_bucket": "listamercado-d9023.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:240518422004:android:4662bc0b9e7c2c2285eda1",
+        "android_client_info": {
+          "package_name": "br.com.pauloc.listamercado"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "240518422004-tdrksb862ha2gfc04vka7es10eu6kvk4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDjocQ5n18Kgauh8n6ZMBFA-rvcVNx2nY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "240518422004-tdrksb862ha2gfc04vka7es10eu6kvk4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
