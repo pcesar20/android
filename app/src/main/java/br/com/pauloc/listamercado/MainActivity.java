@@ -12,12 +12,19 @@ import com.google.android.material.navigation.NavigationView;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.*;
 
 import android.view.Menu;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+    private RecyclerView.ViewHolder mViewHolder;
     FirebaseFirestore db = FirebaseFirestore.getInstance();
     private AppBarConfiguration mAppBarConfiguration;
 
@@ -27,6 +34,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
+        Button btLogin = findViewById(R.id.btnLogar);
+        btLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TextView txtLogin = findViewById(R.id.txtUsuario);
+                TextView txtSenha = findViewById(R.id.txtSenha);
+                String login = txtLogin.getText().toString();
+                String senha = txtSenha.getText().toString();
+                if (login.equals("paulo") && senha.equals("123")){
+                    Alert(getString(R.string.msgSucesso));
+                }else{
+                    Alert(getString(R.string.msgErro));
+                }
+            }
+        });
+
         setSupportActionBar(toolbar);
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -67,6 +90,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void teste(View view) {
+        Alert("Ola Mundo");
+    }
+
+    private void Alert(String s){
+        Toast.makeText(this, s, Toast.LENGTH_LONG).show();
+    }
+
+    @Override
+    public void onClick(View v) {
 
     }
 }

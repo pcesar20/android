@@ -13,4 +13,10 @@
     <string name="menu_tools">Ferramentas</string>
     <string name="menu_share">Compartilhar</string>
     <string name="menu_send">Enviar</string>
+    <string name="usu_rio">usuário</string>
+    <string name="senha">senha</string>
+    <string name="teste">teste</string>
+    <string name="login">Login</string>
+    <string name="msgSucesso">Login realizado com sucesso</string>
+    <string name="msgErro">Login ou senha incorretos</string>
 </resources>
